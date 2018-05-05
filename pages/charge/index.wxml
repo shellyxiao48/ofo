@@ -1,0 +1,15 @@
+<!--pages/charge/index.wxml-->
+<view class='container'>
+  <view class='label'>请输入充值余额</view>
+  <view class="section">
+    <input class='money' type='number' bindinput='bindInput' />
+  </view>
+  <view class="section">
+
+    <button class='tip' bindtap='bindtap'>充值</button>
+
+  </view>
+
+
+
+</view>

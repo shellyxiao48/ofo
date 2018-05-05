@@ -1,0 +1,6 @@
+<!--index.wxml-->
+
+<view class='container'>
+
+<map latitude='{{latitude}}' longitude='{{longitude}}' id="map_container" scale='16' controls='{{controls}}' show-location bindcontroltap='bindcontroltap'/>
+</view>

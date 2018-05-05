@@ -1,0 +1,18 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/report/index",    
+    "pages/scanresult/index",    
+    "pages/usebike/index",    
+    "pages/user/index",
+    "pages/mywallet/index",
+    "pages/charge/index"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#b6db07",
+    "navigationBarTitleText": "ofo 共享单车",
+    "navigationBarTextStyle":"black"
+  }
+}

@@ -1,0 +1,23 @@
+<!--pages/usebike/index.wxml-->
+<view class='container'>
+
+    <view class='carcontainer'>
+      当前单车编号：{{code}}
+
+    </view>
+
+    <view class='timer'>
+      <view>{{status}}</view>
+      <view class='timercontent'>{{timer.hour}}:{{timer.minute}}:{{timer.second}}</view>
+
+    </view>
+
+    <view class='bottomwrapper'>
+      <button type='warn' bindtap='endride'>结束骑行</button>
+      <button type='primary' bindtap='moveToIndex'>回到地图</button>
+    </view>
+
+
+
+
+</view>

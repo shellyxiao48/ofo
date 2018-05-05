@@ -1,0 +1,39 @@
+<!--pages/report/index.wxml-->
+<view class='container'>
+  <view class='o_label'>
+    请选择故障类型
+  </view>
+  <view class='o_cells '>
+    <checkbox-group bindchange="checkboxChange" class="checkboxwrapper">
+      <label class="checkbox" wx:for="{{items}}" wx:key="{{item.name}}">
+        <checkbox value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+      </label>
+    </checkbox-group>
+
+
+  </view>
+  <view class='o_label'>
+  拍摄单车周围环境，便于维修师傅找车
+  </view>
+   <view class='o_cells '>
+    <view class='images' wx:for="{{imagesUrl}}" wx:key="{{item}}">
+      <image src='{{item}}'></image>
+      <icon type='cancel' class='cancel'data-index="{{index}}" bindtap='delete'></icon>
+    </view>
+    <view class="fileInput" bindtap='fileInput'>
+   {{text}}
+   </view>
+   </view>
+   
+   <view class='o_cells'>
+     <input placeholder='车牌号' />
+   </view>
+  <view class='o_cells'>
+     <input placeholder='备注' />
+   </view>
+
+   <button type='primary' disabled='{{disabled}}'>提交</button>
+    
+
+
+</view>
